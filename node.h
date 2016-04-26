@@ -5,7 +5,11 @@
 #ifndef ZDAY_NODE_H
 #define ZDAY_NODE_H
 
+#include <iostream>
+
 #include "neighbor.h"
+
+using namespace std;
 
 template <typename T>
 struct Node

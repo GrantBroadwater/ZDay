@@ -5,6 +5,10 @@
 #ifndef ZDAY_NEIGHBOR_H
 #define ZDAY_NEIGHBOR_H
 
+#include <iostream>
+
+using namespace std;
+
 template <typename T>
 struct Neighbor
 {

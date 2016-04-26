@@ -5,7 +5,11 @@
 #ifndef ZDAY_GRAPH_H
 #define ZDAY_GRAPH_H
 
+#include <iostream>
+
 #include "node.h"
+
+using namespace std;
 
 template <typename T>
 class Graph
