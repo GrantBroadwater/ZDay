@@ -12,8 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d54e955-33a4-414c-8a81-405f3009bc8e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/graph.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/graph.h" afterPath="$PROJECT_DIR$/graph.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.h" afterPath="$PROJECT_DIR$/node.h" />
     </list>
     <ignored path="ZDay.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,7 +50,11 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
               <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-              <folding />
+              <folding>
+                <element signature="e#108#120#0" expanded="true" />
+                <element signature="e#390#402#0" expanded="true" />
+                <element signature="e#548#560#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,12 +62,12 @@
       <file leaf-file-name="node.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+            <state relative-caret-position="105">
+              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
               <folding>
-                <element signature="e#100#112#0" expanded="true" />
-                <element signature="e#1018#1030#0" expanded="true" />
-                <element signature="e#1264#1276#0" expanded="true" />
+                <element signature="e#123#135#0" expanded="true" />
+                <element signature="e#1041#1053#0" expanded="true" />
+                <element signature="e#1287#1299#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -71,14 +76,14 @@
       <file leaf-file-name="graph.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/graph.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="105">
+              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
               <folding>
-                <element signature="e#102#114#0" expanded="true" />
-                <element signature="e#544#557#0" expanded="true" />
-                <element signature="e#634#647#0" expanded="true" />
-                <element signature="e#751#763#0" expanded="true" />
-                <element signature="e#933#945#0" expanded="true" />
+                <element signature="e#121#133#0" expanded="true" />
+                <element signature="e#563#576#0" expanded="true" />
+                <element signature="e#653#666#0" expanded="true" />
+                <element signature="e#770#782#0" expanded="true" />
+                <element signature="e#952#964#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -378,7 +383,14 @@
       <option name="project" value="LOCAL" />
       <updated>1461712570250</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Create template Graph class.&#10;&#10;Graph uses the existing node and neighbor template classes to implement a graph as an adjacency list.">
+      <created>1461712865729</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1461712865729</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -417,7 +429,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create template Node struct.&#10;&#10;Node struct represents a node on a graph." />
-    <option name="LAST_COMMIT_MESSAGE" value="Create template Node struct.&#10;&#10;Node struct represents a node on a graph." />
+    <MESSAGE value="Create template Graph class.&#10;&#10;Graph uses the existing node and neighbor template classes to implement a graph as an adjacency list." />
+    <option name="LAST_COMMIT_MESSAGE" value="Create template Graph class.&#10;&#10;Graph uses the existing node and neighbor template classes to implement a graph as an adjacency list." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -452,32 +465,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-          <folding />
+          <folding>
+            <element signature="e#108#120#0" expanded="true" />
+            <element signature="e#390#402#0" expanded="true" />
+            <element signature="e#548#560#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        <state relative-caret-position="105">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
           <folding>
-            <element signature="e#100#112#0" expanded="true" />
-            <element signature="e#1018#1030#0" expanded="true" />
-            <element signature="e#1264#1276#0" expanded="true" />
+            <element signature="e#123#135#0" expanded="true" />
+            <element signature="e#1041#1053#0" expanded="true" />
+            <element signature="e#1287#1299#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/graph.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="105">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
           <folding>
-            <element signature="e#102#114#0" expanded="true" />
-            <element signature="e#544#557#0" expanded="true" />
-            <element signature="e#634#647#0" expanded="true" />
-            <element signature="e#751#763#0" expanded="true" />
-            <element signature="e#933#945#0" expanded="true" />
+            <element signature="e#121#133#0" expanded="true" />
+            <element signature="e#563#576#0" expanded="true" />
+            <element signature="e#653#666#0" expanded="true" />
+            <element signature="e#770#782#0" expanded="true" />
+            <element signature="e#952#964#0" expanded="true" />
           </folding>
         </state>
       </provider>

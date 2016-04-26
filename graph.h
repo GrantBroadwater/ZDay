@@ -5,6 +5,8 @@
 #ifndef ZDAY_GRAPH_H
 #define ZDAY_GRAPH_H
 
+#include "node.h"
+
 template <typename T>
 class Graph
 {

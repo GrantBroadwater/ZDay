@@ -5,6 +5,8 @@
 #ifndef ZDAY_NODE_H
 #define ZDAY_NODE_H
 
+#include "neighbor.h"
+
 template <typename T>
 struct Node
 {
