@@ -46,6 +46,26 @@ struct Node
     }
   }
 
+  const Node<T>& operator=(const Node<T>& rhs)
+  {
+    if(this == &rhs)
+      return *this;
+
+    clear();
+
+    m_id = rhs.m_id;
+    m_numNeighbors = rhs.m_numNeighbors;
+
+    if(m_numNeighbors > 0)
+    {
+      m_neighbor = new Neighbor<T>[m_numNeighbors];
+      for(int i=0; i<m_numNeighbors; i++)
+        m_neighbor[i] = rhs.m_neighbor[i];
+    }
+
+    return *this;
+  }
+
   void clear()
   {
     if(m_neighbor != NULL)

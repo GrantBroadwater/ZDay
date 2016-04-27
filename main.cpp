@@ -17,14 +17,16 @@ int main()
 
   cin >> numTestCases;
 
-  for(int i=0; i<numTestCases; i++)
-  {
-    cin >> bendersTokens >> cityName >> cityMap;
+  cin >> bendersTokens >> cityName >> cityMap;
 
-    cout << "City: " << cityName << endl;
-    cout << "Tokens: " << bendersTokens << endl;
-    cout << "Graph: " << endl << cityMap << endl;
-  }
+  cout << "City Map: " << endl << cityMap << endl;
+
+  cout << "cost for airport to museum: "
+       << cityMap.cost(string("airport"), string("museum")) << endl;
+  cout << "cost for airport to zoo: "
+       << cityMap.cost(string("airport"), string("zoo")) << endl;
+  cout << "cost for airport to park: "
+       << cityMap.cost(string("airport"), string("park")) << endl;
 
   return 0;
 }

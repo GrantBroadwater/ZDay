@@ -32,6 +32,76 @@ public:
       m_numNodes = 0;
   }
 
+  Graph(const Graph<T>& copy)
+      : m_numNodes(copy.m_numNodes), m_node(NULL)
+  {
+    if(m_numNodes > 0)
+    {
+      m_node = new Node<T>[m_numNodes];
+      for(int i=0; i<m_numNodes; i++)
+      {
+        m_node[i] = Node<T>(copy.m_node[i]);
+      }
+    }
+  }
+
+  const Graph<T>& operator=(const Graph<T>& rhs)
+  {
+    if(this == &rhs)
+      return *this;
+
+    clear();
+
+    m_numNodes = rhs.m_numNodes;
+
+    if(m_numNodes > 0)
+    {
+      m_node = new Node<T>[m_numNodes];
+      for(int i=0; i<m_numNodes; i++)
+      {
+        m_node[i] = Node<T>(rhs.m_node[i]);
+      }
+    }
+
+    return *this;
+  }
+
+  template <typename T1>
+  friend short cost(const Graph<T1> g, const T1& originVal, const T1& targetVal);
+
+  short cost(const T& originVal, const T& targetVal) const
+  {
+    short originNum = 0;
+    int myCost = -1, neighborCost;
+
+    // Return no cost if both nodes are the same
+    if(originVal == targetVal)
+      return 0;
+
+    // Find the origin in the node array
+    while(originNum < m_numNodes && m_node[originNum].m_id != originVal)
+      originNum++;
+
+    if(originNum >= m_numNodes)
+      throw 404;
+
+    // For each neighbor
+    for(int i=0; i<m_node[originNum].m_numNeighbors; i++)
+    {
+
+      // Calculate the cost to get to the target through that neighbor
+      neighborCost = cost(m_node[originNum].m_neighbor[i].m_id, targetVal)
+                     + m_node[originNum].m_neighbor[i].m_cost;
+
+      // If neighborCost is the best route, save that cost
+      if(neighborCost >= 0 && (myCost < 0 || neighborCost < myCost))
+        myCost = neighborCost;
+
+    }
+
+    return myCost;
+  }
+
   void clear()
   {
     if(m_node != NULL)
