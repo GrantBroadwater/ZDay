@@ -66,9 +66,6 @@ public:
     return *this;
   }
 
-  template <typename T1>
-  friend short cost(const Graph<T1> g, const T1& originVal, const T1& targetVal);
-
   short cost(const T& originVal, const T& targetVal) const
   {
     short originNum = 0;

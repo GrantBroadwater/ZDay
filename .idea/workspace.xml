@@ -14,8 +14,6 @@
     <list default="true" id="9d54e955-33a4-414c-8a81-405f3009bc8e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/graph.h" afterPath="$PROJECT_DIR$/graph.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.h" afterPath="$PROJECT_DIR$/node.h" />
     </list>
     <ignored path="ZDay.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,11 +34,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+            <state relative-caret-position="405">
+              <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
               <folding>
                 <element signature="e#50#69#0" expanded="true" />
               </folding>
@@ -68,19 +66,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="graph.h" pinned="false" current-in-tab="false">
+      <file leaf-file-name="graph.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/graph.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="915">
-              <caret line="61" column="20" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
+            <state relative-caret-position="450">
+              <caret line="66" column="3" selection-start-line="66" selection-start-column="3" selection-end-line="66" selection-end-column="3" />
               <folding>
                 <element signature="e#93#112#0" expanded="true" />
                 <element signature="e#164#176#0" expanded="true" />
-                <element signature="e#1083#1096#0" expanded="true" />
-                <element signature="e#2213#2226#0" expanded="true" />
-                <element signature="e#2303#2316#0" expanded="true" />
-                <element signature="e#2420#2432#0" expanded="true" />
-                <element signature="e#2602#2614#0" expanded="true" />
+                <element signature="e#2105#2118#0" expanded="true" />
+                <element signature="e#2195#2208#0" expanded="true" />
+                <element signature="e#2312#2324#0" expanded="true" />
+                <element signature="e#2494#2506#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -96,9 +93,9 @@
       <list>
         <option value="$PROJECT_DIR$/in.txt" />
         <option value="$PROJECT_DIR$/node.h" />
-        <option value="$PROJECT_DIR$/graph.h" />
         <option value="$PROJECT_DIR$/neighbor.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/graph.h" />
       </list>
     </option>
   </component>
@@ -411,7 +408,14 @@
       <option name="project" value="LOCAL" />
       <updated>1461713227883</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Write a cost function and use main to test its functionality">
+      <created>1461722798929</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1461722798929</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -455,7 +459,8 @@
     <MESSAGE value="Add include statements for the graph." />
     <MESSAGE value="Write main function to get graph input and output the graph." />
     <MESSAGE value="Include import and namespace statements." />
-    <option name="LAST_COMMIT_MESSAGE" value="Include import and namespace statements." />
+    <MESSAGE value="Write a cost function and use main to test its functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Write a cost function and use main to test its functionality" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -514,6 +519,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+          <folding>
+            <element signature="e#50#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/node.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -524,26 +539,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/graph.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="915">
-          <caret line="61" column="20" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
+        <state relative-caret-position="450">
+          <caret line="66" column="3" selection-start-line="66" selection-start-column="3" selection-end-line="66" selection-end-column="3" />
           <folding>
             <element signature="e#93#112#0" expanded="true" />
             <element signature="e#164#176#0" expanded="true" />
-            <element signature="e#1083#1096#0" expanded="true" />
-            <element signature="e#2213#2226#0" expanded="true" />
-            <element signature="e#2303#2316#0" expanded="true" />
-            <element signature="e#2420#2432#0" expanded="true" />
-            <element signature="e#2602#2614#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-          <folding>
-            <element signature="e#50#69#0" expanded="true" />
+            <element signature="e#2105#2118#0" expanded="true" />
+            <element signature="e#2195#2208#0" expanded="true" />
+            <element signature="e#2312#2324#0" expanded="true" />
+            <element signature="e#2494#2506#0" expanded="true" />
           </folding>
         </state>
       </provider>
