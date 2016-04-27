@@ -69,7 +69,7 @@ public:
   short cost(const T& originVal, const T& targetVal) const
   {
     short originNum = 0;
-    int myCost = -1, neighborCost;
+    int myCost = -1, neighborCost, tempCost;
 
     // Return no cost if both nodes are the same
     if(originVal == targetVal)
@@ -85,13 +85,12 @@ public:
     // For each neighbor
     for(int i=0; i<m_node[originNum].m_numNeighbors; i++)
     {
-
       // Calculate the cost to get to the target through that neighbor
-      neighborCost = cost(m_node[originNum].m_neighbor[i].m_id, targetVal)
-                     + m_node[originNum].m_neighbor[i].m_cost;
+      tempCost = cost(m_node[originNum].m_neighbor[i].m_id, targetVal);
+      neighborCost = tempCost + m_node[originNum].m_neighbor[i].m_cost;
 
       // If neighborCost is the best route, save that cost
-      if(neighborCost >= 0 && (myCost < 0 || neighborCost < myCost))
+      if(tempCost >= 0 && (myCost < 0 || neighborCost < myCost))
         myCost = neighborCost;
 
     }
@@ -103,15 +102,21 @@ public:
   {
     short travelCost;
     T targetID;
+    bool printed = false;
 
     for(int i=0; i<m_numNodes; i++)
     {
       targetID = m_node[i].m_id;
       travelCost = cost(origin, targetID);
 
-      if(0 < travelCost && travelCost <= costTolerance)
+      if(0 < travelCost && travelCost <= costTolerance) {
         cout << targetID << endl;
+        printed = true;
+      }
     }
+
+    if(!printed)
+      cout << "nothing :-(" << endl;
   }
 
   void clear()
