@@ -17,19 +17,14 @@ int main()
 
   cin >> numTestCases;
 
-  cin >> drZTokens >> cityName >> cityMap;
+  for(int i=0; i<numTestCases; i++)
+  {
+    cin >> drZTokens >> cityName >> cityMap;
 
-  cout << "City Map: " << endl << cityMap << endl;
-
-  cout << "cost for airport to museum: "
-       << cityMap.cost(string("airport"), string("museum")) << endl;
-  cout << "cost for airport to zoo: "
-       << cityMap.cost(string("airport"), string("zoo")) << endl;
-  cout << "cost for airport to park: "
-       << cityMap.cost(string("airport"), string("park")) << endl;
-
-  cout << "\nIn " << cityName << ", Dr. Zoidberg can reach:" << endl;
-  cityMap.printLocationsWithinRange("airport", drZTokens);
+    cout << "In " << cityName << ", Dr. Zoidberg can reach:" << endl;
+    cityMap.printLocationsWithinRange("airport", drZTokens);
+    cout << endl;
+  }
 
   return 0;
 }
