@@ -11,13 +11,13 @@ using namespace std;
 int main()
 {
   short numTestCases;
-  short bendersTokens;
+  short drZTokens;
   string cityName;
   Graph<string> cityMap;
 
   cin >> numTestCases;
 
-  cin >> bendersTokens >> cityName >> cityMap;
+  cin >> drZTokens >> cityName >> cityMap;
 
   cout << "City Map: " << endl << cityMap << endl;
 
@@ -27,6 +27,9 @@ int main()
        << cityMap.cost(string("airport"), string("zoo")) << endl;
   cout << "cost for airport to park: "
        << cityMap.cost(string("airport"), string("park")) << endl;
+
+  cout << "\nIn " << cityName << ", Dr. Zoidberg can reach:" << endl;
+  cityMap.printLocationsWithinRange("airport", drZTokens);
 
   return 0;
 }

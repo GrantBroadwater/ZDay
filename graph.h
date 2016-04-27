@@ -99,6 +99,21 @@ public:
     return myCost;
   }
 
+  void printLocationsWithinRange(const T& origin, const short costTolerance) const
+  {
+    short travelCost;
+    T targetID;
+
+    for(int i=0; i<m_numNodes; i++)
+    {
+      targetID = m_node[i].m_id;
+      travelCost = cost(origin, targetID);
+
+      if(0 < travelCost && travelCost <= costTolerance)
+        cout << targetID << endl;
+    }
+  }
+
   void clear()
   {
     if(m_node != NULL)
