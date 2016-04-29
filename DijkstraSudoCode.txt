@@ -1,0 +1,19 @@
+
+G = Graph
+W = Weights
+s = Starting Vertex
+
+S = Set ofvertex already processed.
+Q = Set of vertex needed to be processed.
+
+Dijkstra(G, W, s)
+  initialize(G, s) // Mark s as starting point (d[s] = 0)
+  S = NULL
+  Q = All vertex in G
+  While Q != NULL
+    u = Extract Min From Q // Delete u from Q
+    S = S + u
+    for each vertex v in Adj[u]
+      relax(u, v, W)
+
+    
