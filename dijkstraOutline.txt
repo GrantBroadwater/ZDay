@@ -1,0 +1,54 @@
+Author: Grant Broadwater
+Date: 5/3/16
+Description:
+  Psudo-code for Dijkstra algorithim
+
+  _______________
+ /               \
+ | MIT Algorithm |
+ \_______________/
+
+G = Graph
+W = Weights
+s = Starting Vertex
+
+S = Set ofvertex already processed.
+Q = Set of vertex needed to be processed.
+
+Dijkstra(G, W, s)
+  initialize(G, s) // Mark s as starting point (d[s] = 0)
+  S = NULL
+  Q = All vertex in G
+  While Q != NULL
+    u = Extract Min From Q // Delete u from Q
+    S = S + u
+    for each vertex v in Adj[u]
+      relax(u, v, W)
+
+  _______________
+ /               \
+ | My Algorithm  |
+ \_______________/
+
+
+T = Graph Type (String for Final Project)
+AVLTree< Node<T> > dijkstra(Graph G, T origin)
+  AVLTree< Node<T> > solution
+  Heap< Node<T> > frontier
+  Node<T> newSol
+  Node<T> newFrontier
+
+  frontier.insert(origin)
+
+  while frontier not empty
+    do
+      newSol = frontier.extractMin()
+    while solution doesn't contain newSol
+
+    solution.insert(newSol)
+    for each neighbor of newSol nei
+      if solution doesn't contain nei
+        newFrontier.id = nei.id
+        newFrontier.cost = newSol.cost + nei.cost
+        fronteir.insert(newFrontier)
+
